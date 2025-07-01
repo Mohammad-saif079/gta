@@ -1,0 +1,87 @@
+.maindiv {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.maindiv>img:nth-child(2) {
+    width: 100vw;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.maindiv>img:nth-child(1) {
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    
+   
+}
+
+
+.maindiv>img:nth-child(3) {
+
+    position: absolute;
+    bottom: -10%;
+    width: 25vw;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+
+}
+.gta{
+    position: absolute;
+    font-family: "Pricedown";
+    z-index: 0;
+    background-color: transparent;
+    width: 300px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.gta>h1{
+    font-family: "Pricedown";
+    font-size: 10vw;
+    color: white;
+    font-weight: 400;
+}
+
+.cover{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    animation: unload 0.1s ease 3.1s forwards;
+    overflow: hidden;
+}
+.cover>svg{
+    
+    z-index: 5;
+    animation: load 2.5s ease 0.6s forwards;
+}
+
+@keyframes load {
+    100%{
+        transform: scale(101) rotate(80deg) ;
+        
+    }
+}
+@keyframes unload {
+    100%{
+        display: none;
+    }
+}

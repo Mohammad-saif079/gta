@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Pricedown";
+  src: url(./assets/Pricedown.woff);
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+}
+::-webkit-scrollbar{
+  display: none;
+}
