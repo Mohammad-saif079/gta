@@ -13,13 +13,9 @@ function App() {
   const [trans, settrans] = useState(`all 0.5s ease-in-out`)
   const handlemove = (event) => {
     if (start) {
-
-    
       setmover(Math.floor((event.clientX - ((width) / 2)) / 20))
     }
-
   }
-  
 
   useEffect(() => {
     setTimeout(() => {
